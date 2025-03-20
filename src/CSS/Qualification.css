@@ -1,0 +1,190 @@
+/* ================================== */
+/* 🎓 Qualification Section Styling    */
+/* ================================== */
+
+.qualification-wrapper {
+  background: #1a1a1a;                    /* Dark background */
+  color: #f4f4f4;                         /* Light text */
+  min-height: 100vh;
+  padding: 80px 20px;
+  max-width: 1200px;                      /* Reduced width for a cleaner look */
+  margin: 0 auto;                         /* Centering the section */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+}
+
+/* ================================== */
+/* 📝 Section Titles and Headings     */
+/* ================================== */
+
+.qualification-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;                         /* White title */
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.qualification-title:hover {
+  color: #00bcd4;                         /* Cyan hover effect */
+}
+
+.qualification-heading {
+  font-size: 30px;
+  color: #00bcd4;                         /* Cyan headings */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00bcd4;       /* Underline effect */
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* ================================== */
+/* 🎯 Qualification Section Styling   */
+/* ================================== */
+
+.qualification-section {
+  margin-bottom: 60px;
+  padding: 40px;
+  background: #2c2c2c;                     /* Darker background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.qualification-section:hover {
+  transform: translateY(-10px);            /* Lift on hover */
+  box-shadow: 0 15px 35px rgba(0, 188, 212, 0.5);
+}
+
+/* ================================== */
+/* 🔥 Lists and Items Styling         */
+/* ================================== */
+
+.qualification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.qualification-item {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #1a1a1a;                     /* Dark background for items */
+  color: #f4f4f4;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.qualification-item:hover {
+  background: #00bcd4;                     /* Cyan hover */
+  color: #1a1a1a;                          /* Dark text */
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.8);
+}
+
+/* ================================== */
+/* 💡 Links Styling                   */
+/* ================================== */
+
+a {
+  color: #00bcd4;                          /* Cyan link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #008c9e;                          /* Darker cyan on hover */
+}
+
+/* ================================== */
+/* 📱 Responsive Design               */
+/* ================================== */
+
+@media (max-width: 1200px) {
+  .qualification-wrapper {
+    max-width: 1000px;
+  }
+
+  .qualification-title {
+    font-size: 42px;
+  }
+
+  .qualification-heading {
+    font-size: 26px;
+  }
+
+  .qualification-item {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .qualification-wrapper {
+    max-width: 900px;
+  }
+
+  .qualification-title {
+    font-size: 38px;
+  }
+
+  .qualification-heading {
+    font-size: 24px;
+  }
+
+  .qualification-item {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .qualification-wrapper {
+    max-width: 90%;
+  }
+
+  .qualification-title {
+    font-size: 32px;
+  }
+
+  .qualification-heading {
+    font-size: 22px;
+  }
+
+  .qualification-section {
+    padding: 30px;
+  }
+
+  .qualification-item {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .qualification-wrapper {
+    max-width: 95%;
+  }
+
+  .qualification-title {
+    font-size: 28px;
+  }
+
+  .qualification-heading {
+    font-size: 20px;
+  }
+
+  .qualification-section {
+    padding: 20px;
+  }
+
+  .qualification-item {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

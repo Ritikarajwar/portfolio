@@ -1,0 +1,176 @@
+/* ============================= */
+/* 🌐 Global Reset and Styling   */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+    background-color: #1a1a1a;  /* Dark theme background */
+    color: #f0f0f0;             /* Light text for contrast */
+    line-height: 1.6;
+  }
+  
+  /* ========================= */
+  /* 🌍 Custom Global Container */
+  /* ========================= */
+  
+  /* Unique container to prevent Bootstrap conflict */
+  .global-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Bootstrap container fix: Full-width by default */
+  .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* ============================= */
+  /* 🎯 Link Styling with Animation */
+  /* ============================= */
+  
+  a {
+    text-decoration: none;
+    color: #f0f0f0;            /* Light text */
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #007bff;             /* Blue hover effect */
+  }
+  
+  /* ========================== */
+  /* 🔥 Typography & Headings   */
+  /* ========================== */
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #f0f0f0;              /* Consistent light heading color */
+  }
+  
+  p {
+    font-size: 18px;
+    color: #ccc;                 /* Softer contrast for paragraphs */
+    line-height: 1.7;
+  }
+  
+  /* ========================== */
+  /* 🎯 List and Button Styles  */
+  /* ========================== */
+  
+  ul {
+    list-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* ============================= */
+  /* 🎯 Global Button Styling      */
+  /* ============================= */
+  .global-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #007bff;         /* Primary color */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s;
+  }
+  
+  .global-btn:hover {
+    background: #0056b3;         /* Darker hover */
+    transform: translateY(-3px);  /* Lift effect */
+    box-shadow: 0 12px 25px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* ========================== */
+  /* 🌟 Animation Effects       */
+  /* ========================== */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* =========================== */
+  /* 📱 Responsive Design        */
+  /* =========================== */
+  
+  @media (max-width: 1200px) {
+    .horizontal-nav ul {
+      gap: 15px;
+    }
+  
+    .left-right {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .horizontal-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-right img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .right h1 {
+      font-size: 30px;
+    }
+  
+    .buttons button {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .horizontal-nav ul {
+      gap: 10px;
+    }
+  
+    .buttons button {
+      font-size: 14px;
+      padding: 6px 15px;
+    }
+  }
+  

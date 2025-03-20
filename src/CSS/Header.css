@@ -1,0 +1,89 @@
+/* Dark Theme Header */
+.horizontal-header {
+  width: 100%;
+  background: #1c1c1c;  /* Dark background */
+  color: #f1f1f1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Navigation */
+.horizontal-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  transition: background 0.3s ease;
+}
+
+.horizontal-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Links */
+.horizontal-nav ul li a {
+  color: #f1f1f1;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.horizontal-nav ul li a:hover {
+  color: #1abc9c;  /* Bright teal */
+  transform: translateY(-5px);
+  background: rgba(26, 188, 156, 0.1);
+}
+
+/* Active Link Styling */
+.horizontal-nav ul li a:active {
+  color: #ff6347;  /* Tomato color */
+}
+
+/* FontAwesome Icons */
+.horizontal-nav svg {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Icon Animation on Hover */
+.horizontal-nav ul li:hover svg {
+  transform: rotate(360deg);
+  color: #f39c12;  /* Icon color on hover */
+}
+
+/* Sticky Header Effect */
+.horizontal-header.sticky {
+  background: #292929;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth Transition */
+@media (max-width: 992px) {
+  .horizontal-nav {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .horizontal-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .horizontal-nav ul li a {
+    justify-content: center;
+    padding: 10px 25px;
+  }
+}

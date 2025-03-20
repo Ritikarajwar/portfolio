@@ -1,0 +1,151 @@
+/* =============================== */
+/* 🌑 Dark & Smooth About Section */
+/* =============================== */
+
+.about-section {
+  background: #1a1a1a;               /* Dark background */
+  color: #f4f4f4;                    /* Light text */
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+/* =============================== */
+/* 🎯 Section Titles and Subtitles */
+/* =============================== */
+
+.section-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;                    /* White heading */
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #ccc;                        /* Light gray */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* =============================== */
+/* 🔥 About Card Styling           */
+/* =============================== */
+
+.about-card {
+  background: #2c2c2c;                /* Darker card background */
+  color: #f4f4f4;                     /* Light text */
+  border: 1px solid #444;             /* Subtle border */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);  /* Deep shadow */
+  padding: 50px;
+  transition: all 0.3s ease;
+  line-height: 1.8;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+}
+
+/* =============================== */
+/* 🔥 Highlighted Keywords         */
+/* =============================== */
+
+.about-card strong {
+  color: #00bcd4;                     /* Smooth cyan color for emphasis */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-card strong:hover {
+  color: #ff9800;                      /* Orange on hover */
+}
+
+/* =============================== */
+/* 📚 Text Styling                  */
+/* =============================== */
+
+.about-card .card-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.about-card .card-text:last-child {
+  margin-bottom: 0;
+}
+
+/* =============================== */
+/* 🛠️ Smooth Animations           */
+/* =============================== */
+
+.about-card .card-text {
+  transition: all 0.3s ease;
+}
+
+.about-card:hover .card-text {
+  color: #ddd;                         /* Slightly lighter on hover */
+}
+
+/* =============================== */
+/* 🛠️ Responsive Design           */
+/* =============================== */
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 38px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .about-card {
+    padding: 40px;
+  }
+
+  .about-card .card-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .about-card {
+    padding: 30px;
+  }
+
+  .about-card .card-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card .card-text {
+    font-size: 14px;
+  }
+}

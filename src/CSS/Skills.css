@@ -1,0 +1,148 @@
+/* =============================== */
+/* 🌑 Dark & Smooth Skills Section */
+/* =============================== */
+
+.skillsContainer {
+  background: #1a1a1a;               /* Dark background */
+  color: #f4f4f4;                    /* Light text */
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============================== */
+/* 🎯 Section Titles                */
+/* =============================== */
+
+.skillsContainer h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;                     /* White title */
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.skillsContainer h1:hover {
+  color: #00bcd4;                     /* Cyan hover effect */
+}
+
+.technicalSkills h2 {
+  font-size: 36px;
+  color: #00bcd4;                     /* Cyan subtitle */
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* =============================== */
+/* 🔥 Skills List                  */
+/* =============================== */
+
+.technicalSkills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.technicalSkills li {
+  font-size: 20px;
+  color: #ccc;                        /* Light gray text */
+  line-height: 1.8;
+  padding: 15px 30px;
+  background: #2c2c2c;                /* Dark gray card */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* 🛠️ Hover Effects */
+.technicalSkills li:hover {
+  transform: translateY(-5px);
+  background: #00bcd4;                /* Cyan hover effect */
+  color: #1a1a1a;                     /* Dark text on hover */
+  box-shadow: 0 15px 30px rgba(0, 188, 212, 0.6);
+}
+
+/* =============================== */
+/* 🎯 Highlighted Keywords         */
+/* =============================== */
+
+.technicalSkills li strong {
+  color: #ff9800;                     /* Orange for keywords */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.technicalSkills li:hover strong {
+  color: #1a1a1a;                     /* Dark on hover */
+}
+
+/* =============================== */
+/* 🛠️ Smooth Animations           */
+/* =============================== */
+
+.technicalSkills li {
+  transition: all 0.3s ease-in-out;
+}
+
+/* =============================== */
+/* 📱 Responsive Design            */
+/* =============================== */
+
+@media (max-width: 992px) {
+  .skillsContainer h1 {
+    font-size: 42px;
+  }
+
+  .technicalSkills h2 {
+    font-size: 30px;
+  }
+
+  .technicalSkills li {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsContainer {
+    padding: 60px 15px;
+  }
+
+  .skillsContainer h1 {
+    font-size: 36px;
+  }
+
+  .technicalSkills h2 {
+    font-size: 28px;
+  }
+
+  .technicalSkills li {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsContainer h1 {
+    font-size: 28px;
+  }
+
+  .technicalSkills h2 {
+    font-size: 24px;
+  }
+
+  .technicalSkills li {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}

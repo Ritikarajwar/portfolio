@@ -1,0 +1,224 @@
+/* ================================== */
+/* 📞 Contact Section Styling          */
+/* ================================== */
+
+.contactContainer {
+  background: #1a1a1a;                      /* Dark background */
+  color: #f4f4f4;                           /* Light text */
+  min-height: 100vh;
+  max-width: 1200px;                        /* Reduced width for cleaner look */
+  margin: 0 auto;                           /* Center the section */
+  padding: 80px 40px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+}
+
+/* ================================== */
+/* 📝 Titles and Headings              */
+/* ================================== */
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: #00bcd4;                           /* Cyan title */
+  margin-bottom: 60px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s;
+}
+
+h1:hover {
+  color: #008c9e;                           /* Darker cyan hover */
+}
+
+h2 {
+  font-size: 32px;
+  color: #00bcd4;                           /* Cyan headings */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00bcd4;         /* Underline effect */
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* ================================== */
+/* 📧 Contact Form                     */
+/* ================================== */
+
+.contactForm, .contactInfo {
+  background: #2c2c2c;                       /* Darker background for contrast */
+  padding: 40px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contactForm:hover, .contactInfo:hover {
+  transform: translateY(-10px);              /* Lift on hover */
+  box-shadow: 0 15px 35px rgba(0, 188, 212, 0.5);
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: #1a1a1a;                       /* Dark background for inputs */
+  color: #f4f4f4;                            /* Light text */
+  border: 1px solid #00bcd4;                 /* Cyan border */
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #008c9e;                     /* Darker cyan on focus */
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+/* Send Button */
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  color: #ffffff;                            /* White text */
+  background: #00bcd4;                       /* Cyan button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #008c9e;                       /* Darker cyan on hover */
+  transform: translateY(-3px);               /* Slight lift effect */
+}
+
+/* ================================== */
+/* 📲 Contact Info                     */
+/* ================================== */
+
+.contactInfo p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.contactInfo a {
+  color: #00bcd4;                            /* Cyan link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contactInfo a:hover {
+  color: #008c9e;                            /* Darker cyan on hover */
+  text-decoration: underline;
+}
+
+/* ================================== */
+/* 📱 Responsive Design                */
+/* ================================== */
+
+@media (max-width: 1200px) {
+  .contactContainer {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .contactInfo p, label, input, textarea, button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contactContainer {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .contactForm, .contactInfo {
+    padding: 30px;
+  }
+
+  form, .contactInfo p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    max-width: 90%;
+    padding: 60px 30px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .contactForm, .contactInfo {
+    padding: 25px;
+  }
+
+  input, textarea, button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactContainer {
+    max-width: 95%;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .contactForm, .contactInfo {
+    padding: 20px;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

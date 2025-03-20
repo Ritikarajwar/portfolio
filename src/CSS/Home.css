@@ -1,0 +1,130 @@
+/* Home Page Styles */
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1c1c1c, #2c3e50);  /* Dark theme gradient */
+  padding: 40px 20px;
+  transition: background 0.5s ease;  /* Smooth transition effect */
+  color: #fff;  /* White text for contrast */
+}
+
+/* Layout styling */
+.left-right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Profile Image */
+.left-right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+  transition: transform 0.4s, box-shadow 0.4s; 
+}
+
+/* Image hover effect */
+.left-right img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8);
+}
+
+/* Content container */
+.right {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Name section */
+.name h1 {
+  font-size: 48px;
+  color: #f39c12;  /* Stylish gold color */
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.name p {
+  font-size: 24px;
+  color: #bdc3c7;  /* Light grey text */
+  margin-bottom: 25px;
+  line-height: 1.8; 
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Button styling */
+.buttons button {
+  padding: 12px 35px;
+  font-size: 18px;
+  border: none;
+  background: #3498db;  /* Bright blue */
+  color: #fff;
+  border-radius: 30px;  /* Smooth rounded edges */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+  background: #2980b9;  /* Darker blue */
+  transform: translateY(-5px);  /* Lift effect */
+  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.7);
+}
+
+/* Button links */
+.buttons a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon styling */
+.buttons svg {
+  font-size: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .left-right {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .left-right img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+
+  .name h1 {
+    font-size: 36px;
+  }
+
+  .name p {
+    font-size: 20px;
+  }
+
+  .buttons button {
+    width: 100%;
+    padding: 12px 25px;
+  }
+}
